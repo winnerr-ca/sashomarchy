@@ -1,0 +1,12 @@
+[app]
+overall = { bg = "#040303" }
+
+[manager]
+cwd = { fg = "#ffffff", bg = "#040303" }
+find_keyword = { fg = "#fef348", bg = "#040303", bold = true }
+hovered = { fg = "#ffffff", bg = "#222222", bold = true }
+preview_hovered = { underline = true }
+
+[status]
+separator_open = ""
+separator_close = ""

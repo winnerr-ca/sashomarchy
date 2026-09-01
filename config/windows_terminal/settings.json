@@ -1,0 +1,138 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{09cf6cf4-30f3-5185-b674-ef11dba4f5ca}",
+    "firstWindowPreference": "persistedWindowLayout",
+    "keybindings": 
+    [
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "Terminal.PasteFromClipboard",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "Terminal.DuplicatePaneAuto",
+            "keys": "alt+shift+d"
+        }
+    ],
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "colorScheme": "IBM 5153"
+        },
+        "list": 
+        [
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "commandline": "%WINDIR%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy ByPass -NoExit -Command \"& 'C:\\Users\\SB\\anaconda3\\shell\\condabin\\conda-hook.ps1' ; conda activate 'C:\\Users\\SB\\anaconda3' \"",
+                "guid": "{eed49005-877d-5de2-94d5-5ce5e370f8c3}",
+                "icon": "C:\\Users\\SB\\anaconda3\\Menu\\anaconda_powershell_prompt.ico",
+                "name": "Anaconda PowerShell Prompt (anaconda3)",
+                "startingDirectory": "C:\\Users\\SB"
+            },
+            {
+                "commandline": "%WINDIR%\\System32\\cmd.exe \"/K\" C:\\Users\\SB\\anaconda3\\Scripts\\activate.bat C:\\Users\\SB\\anaconda3",
+                "guid": "{e78b37b4-0017-568b-9279-1abde5e14cde}",
+                "icon": "C:\\Users\\SB\\anaconda3\\Menu\\anaconda_prompt.ico",
+                "name": "Anaconda Prompt (anaconda3)",
+                "startingDirectory": "C:\\Users\\SB"
+            },
+            {
+                "commandline": "D:\\WSL\\Arch\\Arch.exe",
+                "guid": "{ff2df391-129a-4ac3-a561-01b22bb9a463}",
+                "hidden": false,
+                "name": "Omarchy"
+            },
+            {
+                "colorScheme": "Cpunk",
+                "backgroundImage": "C:\\Users\\SB\\Pictures\\bg3_right_v6.png",
+                "backgroundImageOpacity": 0.50,
+                "backgroundImageStretchMode": "fill",
+                "cursorShape": "bar",
+                "guid": "{09cf6cf4-30f3-5185-b674-ef11dba4f5ca}",
+                "hidden": false,
+                "name": "Arch",
+                "source": "Microsoft.WSL"
+            }
+        ]
+    },
+    "schemes": [
+        {
+            "name": "Cpunk",
+            "background": "#040303",
+            "foreground": "#FFFFFF",
+            "cursorColor": "#F82A2A",
+            "selectionBackground": "#AAACAC",
+            "black": "#040303",
+            "red": "#F82A2A",
+            "green": "#D1D2D1",
+            "yellow": "#FEF348",
+            "blue": "#AAACAC",
+            "purple": "#F76E78",
+            "cyan": "#BABBBB",
+            "white": "#F3F3F3",
+            "brightBlack": "#7F6E6E",
+            "brightRed": "#FF7F7F",
+            "brightGreen": "#FFFFFF",
+            "brightYellow": "#FFF9A3",
+            "brightBlue": "#D8D9D9",
+            "brightPurple": "#FFC2C7",
+            "brightCyan": "#E8E9E9",
+            "brightWhite": "#FFFFFF"
+        },
+        {
+            "name": "Bardo",
+            "background": "#0F0E0B",
+            "foreground": "#C9C7BF",
+            "cursorColor": "#C9C7BF",
+            "selectionBackground": "#938A5F",
+            "black": "#0F0E0B",
+            "red": "#B27575",
+            "green": "#5A4F38",
+            "yellow": "#BDBD89",
+            "blue": "#938A5F",
+            "purple": "#6D6D6D",
+            "cyan": "#345E5E",
+            "white": "#C9C1A6",
+            "brightBlack": "#9E977E",
+            "brightRed": "#D5AEAE",
+            "brightGreen": "#B9DAB9",
+            "brightYellow": "#DFDFC3",
+            "brightBlue": "#CDCDE5",
+            "brightPurple": "#C482C4",
+            "brightCyan": "#90CBCB",
+            "brightWhite": "#C9C7BF"
+        }
+    ],
+    "themes": []
+}
