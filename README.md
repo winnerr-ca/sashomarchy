@@ -26,9 +26,9 @@ Custom Omarchy & ArchWSL workstation setup with an interactive 3-pane cyberpunk 
 
 | Command | Alias | Description |
 |---|---|---|
-| `claude-yolo` | `cx` | Runs Claude Code with `--dangerously-skip-permissions` |
-| `codex-yolo` | `cy` | Runs Codex CLI with `--yolo` |
-| `agy-yolo` | `ca` | Runs Antigravity with `--dangerously-skip-permissions` |
+| `agy-yolo` | `a`, `ca` | Runs Antigravity with `--dangerously-skip-permissions` |
+| `claude-yolo` | `cc` | Runs Claude Code with `--dangerously-skip-permissions` |
+| `codex-yolo` | `cx`, `cy` | Runs Codex CLI with `--yolo` |
 
 ---
 

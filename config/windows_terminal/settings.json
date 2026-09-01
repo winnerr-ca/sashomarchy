@@ -3,9 +3,8 @@
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": [],
     "copyFormatting": "none",
-    "copyOnSelect": false,
-    "defaultProfile": "{09cf6cf4-30f3-5185-b674-ef11dba4f5ca}",
-    "firstWindowPreference": "persistedWindowLayout",
+    "copyOnSelect": true,
+    "defaultProfile": "{531e5e59-f60f-5967-b7ac-b02833b52a5e}",
     "keybindings": 
     [
         {
@@ -31,7 +30,8 @@
     {
         "defaults": 
         {
-            "colorScheme": "IBM 5153"
+            "colorScheme": "Campbell",
+            "historySize": 999999999
         },
         "list": 
         [
@@ -54,84 +54,88 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "commandline": "%WINDIR%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy ByPass -NoExit -Command \"& 'C:\\Users\\SB\\anaconda3\\shell\\condabin\\conda-hook.ps1' ; conda activate 'C:\\Users\\SB\\anaconda3' \"",
-                "guid": "{eed49005-877d-5de2-94d5-5ce5e370f8c3}",
-                "icon": "C:\\Users\\SB\\anaconda3\\Menu\\anaconda_powershell_prompt.ico",
-                "name": "Anaconda PowerShell Prompt (anaconda3)",
-                "startingDirectory": "C:\\Users\\SB"
-            },
-            {
-                "commandline": "%WINDIR%\\System32\\cmd.exe \"/K\" C:\\Users\\SB\\anaconda3\\Scripts\\activate.bat C:\\Users\\SB\\anaconda3",
-                "guid": "{e78b37b4-0017-568b-9279-1abde5e14cde}",
-                "icon": "C:\\Users\\SB\\anaconda3\\Menu\\anaconda_prompt.ico",
-                "name": "Anaconda Prompt (anaconda3)",
-                "startingDirectory": "C:\\Users\\SB"
-            },
-            {
-                "commandline": "D:\\WSL\\Arch\\Arch.exe",
-                "guid": "{ff2df391-129a-4ac3-a561-01b22bb9a463}",
+                "colorScheme": "Ottosson",
+                "font": 
+                {
+                    "face": "Cascadia Code"
+                },
+                "guid": "{e5a59710-497b-51d5-81a6-27e755be2833}",
                 "hidden": false,
-                "name": "Omarchy"
+                "name": "Ubuntu",
+                "source": "Microsoft.WSL"
             },
             {
-                "colorScheme": "Cpunk",
-                "backgroundImage": "C:\\Users\\SB\\Pictures\\bg3_right_v6.png",
-                "backgroundImageOpacity": 0.50,
+                "guid": "{96621597-e312-539c-8d76-668b19c75384}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 18",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{fac5989a-2604-50c4-84b7-6808e65889c6}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 18",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "backgroundImage": "C:\\Users\\Bastani\\Pictures\\sashomarchy\\Arcyx.png",
+                "backgroundImageOpacity": 0.85,
                 "backgroundImageStretchMode": "fill",
+                "colorScheme": "Cpunk",
                 "cursorShape": "bar",
-                "guid": "{09cf6cf4-30f3-5185-b674-ef11dba4f5ca}",
+                "guid": "{531e5e59-f60f-5967-b7ac-b02833b52a5e}",
                 "hidden": false,
-                "name": "Arch",
+                "name": "Archy",
                 "source": "Microsoft.WSL"
             }
         ]
     },
-    "schemes": [
+    "schemes": 
+    [
         {
-            "name": "Cpunk",
-            "background": "#040303",
-            "foreground": "#FFFFFF",
-            "cursorColor": "#F82A2A",
-            "selectionBackground": "#AAACAC",
-            "black": "#040303",
-            "red": "#F82A2A",
-            "green": "#D1D2D1",
-            "yellow": "#FEF348",
-            "blue": "#AAACAC",
-            "purple": "#F76E78",
-            "cyan": "#BABBBB",
-            "white": "#F3F3F3",
-            "brightBlack": "#7F6E6E",
-            "brightRed": "#FF7F7F",
-            "brightGreen": "#FFFFFF",
-            "brightYellow": "#FFF9A3",
-            "brightBlue": "#D8D9D9",
-            "brightPurple": "#FFC2C7",
-            "brightCyan": "#E8E9E9",
-            "brightWhite": "#FFFFFF"
+            "background": "#0F0E0B",
+            "black": "#0F0E0B",
+            "blue": "#938A5F",
+            "brightBlack": "#9E977E",
+            "brightBlue": "#CDCDE5",
+            "brightCyan": "#90CBCB",
+            "brightGreen": "#B9DAB9",
+            "brightPurple": "#C482C4",
+            "brightRed": "#D5AEAE",
+            "brightWhite": "#C9C7BF",
+            "brightYellow": "#DFDFC3",
+            "cursorColor": "#C9C7BF",
+            "cyan": "#345E5E",
+            "foreground": "#C9C7BF",
+            "green": "#5A4F38",
+            "name": "Bardo",
+            "purple": "#6D6D6D",
+            "red": "#B27575",
+            "selectionBackground": "#938A5F",
+            "white": "#C9C1A6",
+            "yellow": "#BDBD89"
         },
         {
-            "name": "Bardo",
-            "background": "#0F0E0B",
-            "foreground": "#C9C7BF",
-            "cursorColor": "#C9C7BF",
-            "selectionBackground": "#938A5F",
-            "black": "#0F0E0B",
-            "red": "#B27575",
-            "green": "#5A4F38",
-            "yellow": "#BDBD89",
-            "blue": "#938A5F",
-            "purple": "#6D6D6D",
-            "cyan": "#345E5E",
-            "white": "#C9C1A6",
-            "brightBlack": "#9E977E",
-            "brightRed": "#D5AEAE",
-            "brightGreen": "#B9DAB9",
-            "brightYellow": "#DFDFC3",
-            "brightBlue": "#CDCDE5",
-            "brightPurple": "#C482C4",
-            "brightCyan": "#90CBCB",
-            "brightWhite": "#C9C7BF"
+            "background": "#040303",
+            "black": "#040303",
+            "blue": "#AAACAC",
+            "brightBlack": "#7F6E6E",
+            "brightBlue": "#D8D9D9",
+            "brightCyan": "#E8E9E9",
+            "brightGreen": "#FFFFFF",
+            "brightPurple": "#FFC2C7",
+            "brightRed": "#FF7F7F",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFF9A3",
+            "cursorColor": "#F82A2A",
+            "cyan": "#BABBBB",
+            "foreground": "#FFFFFF",
+            "green": "#D1D2D1",
+            "name": "Cpunk",
+            "purple": "#F76E78",
+            "red": "#F82A2A",
+            "selectionBackground": "#AAACAC",
+            "white": "#F3F3F3",
+            "yellow": "#FEF348"
         }
     ],
     "themes": []
