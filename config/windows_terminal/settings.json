@@ -5,8 +5,7 @@
     "copyFormatting": "none",
     "copyOnSelect": true,
     "defaultProfile": "{531e5e59-f60f-5967-b7ac-b02833b52a5e}",
-    "keybindings": 
-    [
+    "keybindings": [
         {
             "id": "Terminal.CopyToClipboard",
             "keys": "ctrl+c"
@@ -20,21 +19,17 @@
             "keys": "alt+shift+d"
         }
     ],
-    "newTabMenu": 
-    [
+    "newTabMenu": [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "colorScheme": "Campbell",
             "historySize": 999999999
         },
-        "list": 
-        [
+        "list": [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -48,15 +43,8 @@
                 "name": "Command Prompt"
             },
             {
-                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": false,
-                "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
-            },
-            {
                 "colorScheme": "Ottosson",
-                "font": 
-                {
+                "font": {
                     "face": "Cascadia Code"
                 },
                 "guid": "{e5a59710-497b-51d5-81a6-27e755be2833}",
@@ -65,32 +53,22 @@
                 "source": "Microsoft.WSL"
             },
             {
-                "guid": "{96621597-e312-539c-8d76-668b19c75384}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 18",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{fac5989a-2604-50c4-84b7-6808e65889c6}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 18",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "backgroundImage": "C:\\Users\\Bastani\\Pictures\\sashomarchy\\Arcyx.png",
-                "backgroundImageOpacity": 0.85,
+                "backgroundImage": "C:\\Users\\Bastani\\Pictures\\sashomarchy\\Bxry2.png",
+                "backgroundImageOpacity": 0.2,
                 "backgroundImageStretchMode": "fill",
                 "colorScheme": "Cpunk",
                 "cursorShape": "bar",
+                "experimental.rainbowSuggestions": true,
+                "experimental.repositionCursorWithMouse": false,
                 "guid": "{531e5e59-f60f-5967-b7ac-b02833b52a5e}",
                 "hidden": false,
                 "name": "Archy",
+                "rightClickContextMenu": false,
                 "source": "Microsoft.WSL"
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#0F0E0B",
             "black": "#0F0E0B",
