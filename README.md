@@ -40,6 +40,23 @@ Custom Omarchy & ArchWSL workstation setup with an interactive 3-pane cyberpunk 
 
 ---
 
+## 🔄 Windows Terminal Wallpaper Rotation
+
+`scripts/rotate-terminal-wallpaper.sh` cycles the "Archy" Windows Terminal profile's
+`backgroundImage` through the images in `Pictures/sashomarchy` (excluding the
+right-pane-specific `bg3_right*`/`right_pane_*`/`right-pane-*` assets). A systemd
+`--user` timer (`config/systemd/sashomarchy-wallpaper.timer`) runs it 2 minutes after
+boot and then every hour; state (which wallpaper is current) is kept in
+`~/.local/state/sashomarchy/terminal-wallpaper-current`.
+
+Run it manually any time with:
+
+```bash
+~/sashomarchy/scripts/rotate-terminal-wallpaper.sh
+```
+
+Adjust `OnUnitActiveSec` in the `.timer` file to change the rotation interval.
+
 ## 🚀 1-Click Installation / Restore
 
 To restore all configs on a fresh Arch installation:
