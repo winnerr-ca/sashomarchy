@@ -1,6 +1,0 @@
-[Unit]
-Description=Rotate sashomarchy Windows Terminal wallpaper
-
-[Service]
-Type=oneshot
-ExecStart=%h/sashomarchy/scripts/rotate-terminal-wallpaper.sh
