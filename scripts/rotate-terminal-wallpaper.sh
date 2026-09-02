@@ -22,14 +22,33 @@ if [[ ! -f "$SETTINGS" ]]; then
   exit 1
 fi
 
-# Right-pane masked artwork (bg3_right_*, right_pane_*, right-pane-*, bg3_split)
-# is sized/cropped for a different UI and isn't part of the rotation set.
-mapfile -t WALLPAPERS < <(
-  find "$WALLPAPER_DIR" -maxdepth 1 -type f \
-    \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" \) \
-    ! -iname "*right_pane*" ! -iname "*right-pane*" ! -iname "bg3_right*" ! -iname "bg3_split*" \
-    -printf "%f\n" | sort
+# Explicit whitelist of on-theme cyberpunk wallpapers. Deliberately excludes:
+# right-pane masked artwork (bg3_right_*, right_pane_*, right-pane-*, bg3_split
+# - sized/cropped for a different UI) and unrelated hash-named/travelers-visions
+# images that don't match the cyberpunk aesthetic.
+CYBER_WALLPAPERS=(
+  Arcyx.png
+  Bxry2.png
+  Cryox3.png
+  Draxo.png
+  bg3.jpg
+  building_cyber.jpg
+  cyberpunk-1.jpg
+  cyberpunk-2.png
+  cyberpunk-3.png
+  cyberpunk-4.jpg
+  cyberpunk-5.png
+  cyberpunk-6.png
+  cyberpunk_neon.png
+  darknet.png
+  futuristic_city_red_eye.png
+  anime-skull-1.png
 )
+
+WALLPAPERS=()
+for f in "${CYBER_WALLPAPERS[@]}"; do
+  [[ -f "$WALLPAPER_DIR/$f" ]] && WALLPAPERS+=("$f")
+done
 
 if (( ${#WALLPAPERS[@]} == 0 )); then
   echo "sashomarchy: no candidate wallpapers found in $WALLPAPER_DIR" >&2
