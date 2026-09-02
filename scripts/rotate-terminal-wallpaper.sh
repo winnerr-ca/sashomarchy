@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Rotates the backgroundImage of the "Archy" Windows Terminal profile through
-# the wallpaper set in Pictures/sashomarchy. Run on a timer via the
-# sashomarchy-wallpaper systemd user unit (see config/systemd/).
+# the official Omarchy wallpaper set in Pictures/sashomarchy. Called from
+# config/bash/.bashrc on every new interactive shell (i.e. every new terminal).
 set -euo pipefail
 
 WIN_USER="${SASHOMARCHY_WIN_USER:-Bastani}"
@@ -22,31 +22,19 @@ if [[ ! -f "$SETTINGS" ]]; then
   exit 1
 fi
 
-# Explicit whitelist of on-theme cyberpunk wallpapers. Deliberately excludes:
-# right-pane masked artwork (bg3_right_*, right_pane_*, right-pane-*, bg3_split
-# - sized/cropped for a different UI) and unrelated hash-named/travelers-visions
-# images that don't match the cyberpunk aesthetic.
-CYBER_WALLPAPERS=(
+# Official Omarchy cpunk theme wallpapers only (the set the theme ships with,
+# also mirrored in ~/.config/omarchy/themes/cpunk/backgrounds/). Everything
+# else in this folder (custom cyberpunk extras, right-pane masked artwork,
+# random hash-named images) is deliberately excluded.
+OFFICIAL_WALLPAPERS=(
   Arcyx.png
   Bxry2.png
   Cryox3.png
   Draxo.png
-  bg3.jpg
-  building_cyber.jpg
-  cyberpunk-1.jpg
-  cyberpunk-2.png
-  cyberpunk-3.png
-  cyberpunk-4.jpg
-  cyberpunk-5.png
-  cyberpunk-6.png
-  cyberpunk_neon.png
-  darknet.png
-  futuristic_city_red_eye.png
-  anime-skull-1.png
 )
 
 WALLPAPERS=()
-for f in "${CYBER_WALLPAPERS[@]}"; do
+for f in "${OFFICIAL_WALLPAPERS[@]}"; do
   [[ -f "$WALLPAPER_DIR/$f" ]] && WALLPAPERS+=("$f")
 done
 
